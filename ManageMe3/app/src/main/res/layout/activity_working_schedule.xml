@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".WorkingScheduleActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/textDatumCalendarWS"
+        app:layout_constraintStart_toStartOf="@+id/textDatumCalendarWS"
+        app:layout_constraintTop_toBottomOf="@+id/textDatumCalendarWS">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDay1Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BF2CC35E"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/buttonDay2Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/buttonDay3Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buttonDay4Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/buttonDay5Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/buttonDay6Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/buttonDay7Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="7" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDay8Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/buttonDay9Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buttonDay10Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/buttonDay11Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="11" />
+
+            <Button
+                android:id="@+id/buttonDay12Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="12" />
+
+            <Button
+                android:id="@+id/buttonDay13Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="13" />
+
+            <Button
+                android:id="@+id/buttonDay14Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDay15Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/buttonDay16Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="16" />
+
+            <Button
+                android:id="@+id/buttonDay17Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="17" />
+
+            <Button
+                android:id="@+id/buttonDay18Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="18" />
+
+            <Button
+                android:id="@+id/buttonDay19Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="19" />
+
+            <Button
+                android:id="@+id/buttonDay20Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="20" />
+
+            <Button
+                android:id="@+id/buttonDay21Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="21" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDay22Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="22" />
+
+            <Button
+                android:id="@+id/buttonDay23Calendar"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="23" />
+
+            <Button
+                android:id="@+id/buttonDay24Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="24" />
+
+            <Button
+                android:id="@+id/buttonDay25Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="25" />
+
+            <Button
+                android:id="@+id/buttonDay26Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="26" />
+
+            <Button
+                android:id="@+id/buttonDay27Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="27" />
+
+            <Button
+                android:id="@+id/buttonDay28Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="28" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDay29Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="29" />
+
+            <Button
+                android:id="@+id/buttonDay30Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFC5C5C5"
+                android:gravity="center"
+                android:text="30" />
+
+            <Button
+                android:id="@+id/buttonDay31Calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#BFF11F1F"
+                android:gravity="center"
+                android:text="31" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textDatumCalendarWS"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circleblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:gravity="center"
+        android:text="Siječanj 2023"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <ImageButton
+        android:id="@+id/buttonIduciMjesecCalendarWS"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/textDatumCalendarWS"
+        app:layout_constraintTop_toTopOf="@+id/textDatumCalendarWS"
+        app:srcCompat="@drawable/ic_baseline_arrow_circle_right_24"
+        tools:srcCompat="@drawable/ic_baseline_arrow_circle_right_24" />
+
+    <ImageButton
+        android:id="@+id/buttonProsliMjesecCalendarWS"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:backgroundTint="#00FDFBFB"
+        app:layout_constraintBottom_toBottomOf="@+id/textDatumCalendarWS"
+        app:layout_constraintStart_toStartOf="@+id/textDatumCalendarWS"
+        app:layout_constraintTop_toTopOf="@+id/textDatumCalendarWS"
+        app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24"
+        tools:srcCompat="@drawable/ic_baseline_arrow_circle_left_24" />
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeWS"
+        app:layout_constraintStart_toStartOf="@+id/textImeEtapeWS"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeWS">
+
+        <TextView
+            android:id="@+id/textProstor1WS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Raspored rada"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProstor2WS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Stanje skladišta"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCurrentTimeWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Time"
+        android:textColor="#E663CDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageWS"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textImeEtapeWS"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeWS"
+        app:layout_constraintTop_toTopOf="@+id/textImeEtapeWS"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textImeEtapeWS"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Raspored rada"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView48"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite aktivnost: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragWS" />
+
+    <LinearLayout
+        android:id="@+id/llNatragWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/clRadnoVrijemeWS"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circleblueroomactivity"
+        android:backgroundTint="#E663CDFD"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintVertical_bias="0.429">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="Datum: "
+                android:textSize="18sp"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="1. siječnja 2023"
+                android:textSize="18sp"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/adamina"
+            android:text="Početak radnog vremena:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView54"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/adamina"
+            android:text="Kraj radnog vremena:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleblueroomactivity"
+            android:backgroundTint="#FFF"
+            android:fontFamily="@font/adamina"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:text="12:00"
+            android:textColor="#E663CDFD"
+            app:layout_constraintEnd_toEndOf="@+id/textView53"
+            app:layout_constraintStart_toStartOf="@+id/textView53"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleblueroomactivity"
+            android:backgroundTint="#FFF"
+            android:fontFamily="@font/adamina"
+            android:padding="6dp"
+            android:text="20:00"
+            android:textStyle="bold"
+            android:textColor="#E663CDFD"
+            app:layout_constraintEnd_toEndOf="@+id/textView54"
+            app:layout_constraintStart_toStartOf="@+id/textView54"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

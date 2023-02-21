@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/clSAVO"
+    tools:context=".StorageActivityVO">
+
+    <TextView
+        android:id="@+id/textCurrentTimeSAVO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite prostor: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragSAID" />
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageSA"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeSA"
+        app:layout_constraintTop_toTopOf="@+id/textView27"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textImeEtapeSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Skladište"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <LinearLayout
+        android:id="@+id/llNatragSAID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center_vertical"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textDodatiStavkuSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circleblue"
+        android:backgroundTint="#E663CDFD"
+        android:padding="3dp"
+        android:text="  +  "
+        android:fontFamily="@font/adamina"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/circleblue"
+        android:backgroundTint="#E663CDFD"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="7dp"
+        android:text="Dodaj proizvod"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:fontFamily="@font/adamina"
+        app:layout_constraintEnd_toStartOf="@+id/textDodatiStavkuSA"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/proizvod1SA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda1SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom1SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada1SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom1SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda1SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod2SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda2SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom2SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada2SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom2SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda2SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod3SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda3SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom3SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada3SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom3SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda3SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod4SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda4SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom4SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada4SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom4SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda4SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod5SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda5SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom5SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada5SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom5SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda5SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod6SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda6SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom6SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada6SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom6SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda6SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod7SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda7SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom7SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada7SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPLusKom7SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda7SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod8SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda8SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom8SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada8SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom8SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda8SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod9SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda9SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom9SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada9SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom9SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda9SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod10SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda10SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom10SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada10SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom10SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda10SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod11SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda11SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom11SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada11SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom11SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda11SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod12SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda12SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom12SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada12SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom12SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda12SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <LinearLayout
+                android:id="@+id/proizvod13SA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="@drawable/circledarkblue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textNazivProizvoda13SA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Sapun"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textMinusKom13SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  -  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBrojKomada13SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textPlusKom13SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:fontFamily="@font/adamina"
+                    android:text="  +  "
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adamina"
+                    android:text="  kom"
+                    android:textColor="#E663CDFD" />
+
+                <TextView
+                    android:id="@+id/textDetailProizvoda13SAVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Detaljnije"
+                    android:textColor="#E663CDFD" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDodatiProizvodSA"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/circlewhitebuttonthin"
+        android:backgroundTint="#E663CDFD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/circledarkblue"
+            android:backgroundTint="#E627B4EC"
+            android:fontFamily="@font/adamina"
+            android:padding="6dp"
+            android:text=" Informacije o proizvodu "
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageCloseDodatiProizvodSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_cancel_24" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/adamina"
+            android:text="Naziv proizvoda: "
+            android:textColor="#E6FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDodajNoviProizvodSA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:layout_constraintVertical_bias="0.19999999" />
+
+        <EditText
+            android:id="@+id/editTextNazivDodanogProizvodaSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circlewhite"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:fontFamily="@font/adamina"
+            android:hint="Unesite naziv proizvoda"
+            android:inputType="textPersonName"
+            android:padding="7dp"
+            android:textColor="#E663CDFD"
+            android:textColorHint="#A663CDFD"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/adamina"
+            android:text="Količina proizvoda: "
+            android:textColor="#E6FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextNazivDodanogProizvodaSA"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNazivDodanogProizvodaSA" />
+
+        <EditText
+            android:id="@+id/editTextKolicinaProizvodaSAID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circlewhite"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:fontFamily="@font/adamina"
+            android:hint="Unesite količinu proizvoda"
+            android:inputType="number"
+            android:padding="7dp"
+            android:textColor="#E663CDFD"
+            android:textColorHint="#A663CDFD"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <Button
+            android:id="@+id/buttonDodajNoviProizvodSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/circledarkblue"
+            android:backgroundTint="#E627B4EC"
+            android:padding="6dp"
+            android:text="Dodaj proizvod"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeKPVO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeSA"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textImeEtapeSA"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeSA">
+
+        <TextView
+            android:id="@+id/textProstor1SA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Plan soba"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProstor2SA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Restoran"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

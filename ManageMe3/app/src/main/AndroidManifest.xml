@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkingScheduleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WorkerCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyTasksActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WorkerCategoryChoiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StorageItemDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StorageActivityVO"
+            android:exported="true" />
+        <activity
+            android:name=".StorageActivityPO"
+            android:exported="true" />
+        <activity
+            android:name=".KitchenPlanActivityVO"
+            android:exported="true" />
+        <activity
+            android:name=".KitchenPlanActivityPO"
+            android:exported="true" />
+        <activity
+            android:name=".RoomPlanActivityVO"
+            android:exported="true" />
+        <activity
+            android:name=".RoomPlanActivityPO"
+            android:exported="true" />
+        <activity
+            android:name=".InfoRoomActivityVO"
+            android:exported="true" />
+        <activity
+            android:name=".InfoRoomActivityPO"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

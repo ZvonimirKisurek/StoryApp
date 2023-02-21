@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".WorkerCategoryChoiceActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonRoomPlanCC"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circleblue"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/roomplan"
+        app:layout_constraintBottom_toTopOf="@+id/textView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/plan" />
+
+    <ImageButton
+        android:id="@+id/imageButtonStorageCC"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circleblue"
+        android:padding="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/storage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/storage" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRestoranCC"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/circleblue"
+        android:padding="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/restoran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/restoran" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="PLAN SOBA"
+        android:textColor="#E663CDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonRestoranCC"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRoomPlanCC"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRoomPlanCC" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="RESTORAN"
+        android:textColor="#E663CDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRestoranCC"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRestoranCC"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRestoranCC" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="STANJE SKLADIŠTA"
+        android:textColor="#E663CDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonStorageCC"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonStorageCC"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonStorageCC" />
+</androidx.constraintlayout.widget.ConstraintLayout>

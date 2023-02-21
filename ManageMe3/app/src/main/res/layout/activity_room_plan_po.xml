@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clRoomPlanActivityPO"
+    tools:context=".RoomPlanActivityVO"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/clUslugeRP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba1RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/roomleft"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView7"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageProfil1RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning1RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageView69"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe1RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="1A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageClean1RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                            <ImageView
+                                android:id="@+id/imageFood1RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake1RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageView101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="space"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba10RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/room2"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView7"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView171"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView181"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning10RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                app:srcCompat="@drawable/exclamationred"
+                                tools:srcCompat="@drawable/exclamationred" />
+
+                            <ImageView
+                                android:id="@+id/imageProfil10RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:padding="0dp"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe10RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="10A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView162"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake10RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageFood10RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageClean10RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textInfoSoba1RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba1RP"
+                        app:layout_constraintStart_toEndOf="@+id/vlSoba1RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba1RP" />
+
+                    <TextView
+                        android:id="@+id/textInfoSoba10RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba10RP"
+                        app:layout_constraintEnd_toStartOf="@+id/vlSoba10RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba10RP" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/empty_tall_divider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba2RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/roomleft"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView23"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageProfil2RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning2RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageView172"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView182"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe2RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="2A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageClean2RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                            <ImageView
+                                android:id="@+id/imageFood2RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake2RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageView163"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="space"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba9RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/room2"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView23"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView175"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView185"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning9RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageProfil9RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:padding="0dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe9RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="9A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake9RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageFood9RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageClean9RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textInfoSoba2RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/vlSoba2RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba2RP" />
+
+                    <TextView
+                        android:id="@+id/textInfoSoba9RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba9RP"
+                        app:layout_constraintEnd_toStartOf="@+id/vlSoba9RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba9RP" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/empty_tall_divider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba3RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/roomleft"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView11"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageProfil3RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning3RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageView29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe3RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="3A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageClean3RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                            <ImageView
+                                android:id="@+id/imageFood3RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake3RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageView24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="space"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba8RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/room2"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView11"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning8RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageProfil8RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:padding="0dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe8RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="8A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake8RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageFood8RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageClean8RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textInfoSoba3RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba3RP"
+                        app:layout_constraintStart_toEndOf="@+id/vlSoba3RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba3RP" />
+
+                    <TextView
+                        android:id="@+id/textInfoSoba8RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba8RP"
+                        app:layout_constraintEnd_toStartOf="@+id/vlSoba8RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba8RP" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/empty_tall_divider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba4RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/roomleft"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView61"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageProfil4RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning4RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageView32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe4RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="4A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageClean4RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                            <ImageView
+                                android:id="@+id/imageFood4RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake4RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageView33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="space"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba7RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/room2"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView61"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning7RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageProfil7RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:padding="0dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe7RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="7A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake7RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageFood7RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageClean7RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textInfoSoba7RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba7RP"
+                        app:layout_constraintEnd_toStartOf="@+id/vlSoba7RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba7RP" />
+
+                    <TextView
+                        android:id="@+id/textInfoSoba4RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba4RP"
+                        app:layout_constraintStart_toEndOf="@+id/vlSoba4RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba4RP" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/empty_tall_divider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba5RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/roomleft"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView12"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageProfil5RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning5RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe5RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="5A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageClean5RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                            <ImageView
+                                android:id="@+id/imageFood5RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake5RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageView40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="space"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/vlSoba6RP"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/room2"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView12"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/employeicon" />
+
+                            <ImageView
+                                android:id="@+id/imageWarning6RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/exclamation"
+                                tools:srcCompat="@drawable/exclamation" />
+
+                            <ImageView
+                                android:id="@+id/imageProfil6RP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:padding="0dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_baseline_person_24"
+                                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/textBrojSobe6RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="6A"
+                                android:textColor="#FFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/adamina"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/managericon"
+                                tools:srcCompat="@drawable/managericon" />
+
+                            <ImageView
+                                android:id="@+id/imageBedMake6RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:scaleType="centerInside"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/bedmaking"
+                                tools:srcCompat="@drawable/bedmaking" />
+
+                            <ImageView
+                                android:id="@+id/imageFood6RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/foodicon"
+                                tools:srcCompat="@drawable/foodicon" />
+
+                            <ImageView
+                                android:id="@+id/imageClean6RP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/circleblueroomactivity"
+                                android:backgroundTint="#E663CDFD"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/cleaningicon"
+                                tools:srcCompat="@drawable/cleaningicon" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textInfoSoba6RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba6RP"
+                        app:layout_constraintEnd_toStartOf="@+id/vlSoba6RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba6RP" />
+
+                    <TextView
+                        android:id="@+id/textInfoSoba5RP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:background="@drawable/circletextblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:fontFamily="@font/adamina"
+                        android:text="Informacije o sobi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/vlSoba5RP"
+                        app:layout_constraintStart_toEndOf="@+id/vlSoba5RP"
+                        app:layout_constraintTop_toTopOf="@+id/vlSoba5RP" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite kat: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragRP" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite prostor: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textBrojEtapeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="1. kat"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textImeEtapeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Plan soba"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <ImageButton
+        android:id="@+id/imageDropStageRP"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textBrojEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textBrojEtapeRP"
+        app:layout_constraintTop_toTopOf="@+id/textBrojEtapeRP"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageRP"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textImeEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeRP"
+        app:layout_constraintTop_toTopOf="@+id/textImeEtapeRP"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeRP">
+
+        <TextView
+            android:id="@+id/textProstor1RP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Stanje skladišta"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProstor2RP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Restoran"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clOdabirKataRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textBrojEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textBrojEtapeRP">
+
+        <TextView
+            android:id="@+id/textPrvaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="2. kat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textDrugaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="3. kat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textTrecaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="4. kat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUslugeRP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/circleblue"
+        android:backgroundTint="#E663CDFD"
+        android:padding="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDogađajikonaRP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/circlewhite"
+            android:padding="2dp"
+            android:src="@drawable/bedmaking"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bedmaking"
+            tools:srcCompat="@drawable/bedmaking" />
+
+        <TextView
+            android:id="@+id/textUslugaZaDodatiRP"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:padding="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Odabrati uslugu"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageDogađajikonaRP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTerminUslugeRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:padding="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Termin"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageUslugePullUpRP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageTerminiPullUpRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTerminUslugeRP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <Button
+            android:id="@+id/buttonPotvrdiUsluguRP"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="Potvrdi"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageTerminiPullUpRP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageTerminiPullUpRP"
+            app:layout_constraintTop_toTopOf="@+id/imageTerminiPullUpRP" />
+
+        <ImageButton
+            android:id="@+id/imageUslugePullUpRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textUslugaZaDodatiRP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/llNatragRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center_vertical"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-8dp"
+        app:layout_constraintBottom_toTopOf="@+id/clUslugeRP"
+        app:layout_constraintEnd_toEndOf="@+id/clUslugeRP"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/clUslugeRP">
+
+        <LinearLayout
+            android:id="@+id/llIzborUslugeRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textPrvaOpcijaUslugeRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="Posluga u sobu"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textDrugaOpcijaUslugeRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="Promijena posteljine"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textTrecaOpcijaUslugeRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="Nadopuna materijala u sobi"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-8dp"
+        app:layout_constraintBottom_toTopOf="@+id/clUslugeRP"
+        app:layout_constraintEnd_toEndOf="@+id/clUslugeRP"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="@+id/clUslugeRP">
+
+        <LinearLayout
+            android:id="@+id/llIzborVremenaUslugeRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge1RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="08:00"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge2RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="08:30"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge3RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="09:00"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge4RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="09:30"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge5RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="10:00"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge6RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="10:30"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge7RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="11:00"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textVrijemeUsluge8RP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleroomnumberblue"
+                android:backgroundTint="#D939BCEF"
+                android:gravity="center"
+                android:text="11:30"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:fontFamily="@font/adamina" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textCurrentTimeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

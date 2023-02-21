@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/clKPPO"
+    tools:context=".KitchenPlanActivityVO">
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageKPPO"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textImeEtapeKPPO"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeKPPO"
+        app:layout_constraintTop_toTopOf="@+id/textImeEtapeKPPO"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textCurrentTimeKPPO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textImeEtapeKPPO"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Restoran"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite prostor: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragWS" />
+
+    <LinearLayout
+        android:id="@+id/llNatragWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clKategorija1KP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/table"
+                    tools:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:padding="6dp"
+                    android:text="Kategorija 1"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView41">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1KP"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:indeterminateOnly="false"
+                            android:progressDrawable="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="25" />
+
+                        <TextView
+                            android:id="@+id/textCurrentProgress1KPPO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text=" 100%"
+                            android:textColor="#E663CDFD"
+                            app:fontFamily="@font/adamina"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar1KP"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circleblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:gravity="center"
+                        android:text="Trenutno stanje"
+                        android:textColor="#FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/adamina"
+                        app:textAllCaps="false" />
+
+                    <ImageView
+                        android:id="@+id/imageWarning1KP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/exclamationred" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clKategorija2KP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView89"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/table"
+                    tools:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:padding="6dp"
+                    android:text="Kategorija 2"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView89"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView89" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView89">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2KP"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:indeterminateOnly="false"
+                            android:progressDrawable="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="25" />
+
+                        <TextView
+                            android:id="@+id/textCurrentProgress2KPPO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text=" 100%"
+                            android:textColor="#E663CDFD"
+                            app:fontFamily="@font/adamina"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar2KP"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circleblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:gravity="center"
+                        android:text="Trenutno stanje"
+                        android:textColor="#FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/adamina"
+                        app:textAllCaps="false" />
+
+                    <ImageView
+                        android:id="@+id/imageWarning2KP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/exclamationred" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clKategorija3KP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/table"
+                    tools:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:padding="6dp"
+                    android:text="Kategorija 3"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar3KP"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:indeterminateOnly="false"
+                            android:progressDrawable="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="25" />
+
+                        <TextView
+                            android:id="@+id/textCurrentProgress3KPPO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text=" 100%"
+                            android:textColor="#E663CDFD"
+                            app:fontFamily="@font/adamina"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar3KP"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circleblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:gravity="center"
+                        android:text="Trenutno stanje"
+                        android:textColor="#FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/adamina"
+                        app:textAllCaps="false" />
+
+                    <ImageView
+                        android:id="@+id/imageWarning3KP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/exclamationred" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clKategorija4KP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/table"
+                    tools:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:padding="6dp"
+                    android:text="Kategorija 4"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView21">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar4KP"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:indeterminateOnly="false"
+                            android:progressDrawable="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="25" />
+
+                        <TextView
+                            android:id="@+id/textCurrentProgress4KPPO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text=" 100%"
+                            android:textColor="#E663CDFD"
+                            app:fontFamily="@font/adamina"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar4KP"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circleblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:gravity="center"
+                        android:text="Trenutno stanje"
+                        android:textColor="#FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/adamina"
+                        app:textAllCaps="false" />
+
+                    <ImageView
+                        android:id="@+id/imageWarning4KP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/exclamationred" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clKategorija5KP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/table"
+                    tools:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circleblue"
+                    android:backgroundTint="#E663CDFD"
+                    android:padding="6dp"
+                    android:text="Kategorija 5"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar5KP"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:indeterminateOnly="false"
+                            android:progressDrawable="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="25" />
+
+                        <TextView
+                            android:id="@+id/textCurrentProgress5KPPO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text=" 100%"
+                            android:textColor="#E663CDFD"
+                            app:fontFamily="@font/adamina"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar5KP"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/circleblue"
+                        android:backgroundTint="#E663CDFD"
+                        android:gravity="center"
+                        android:text="Trenutno stanje"
+                        android:textColor="#FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/adamina"
+                        app:textAllCaps="false" />
+
+                    <ImageView
+                        android:id="@+id/imageWarning5KP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/exclamationred" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeKPPO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeKPPO"
+        app:layout_constraintStart_toStartOf="@+id/textImeEtapeKPPO"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeKPPO">
+
+        <TextView
+            android:id="@+id/textProstor1KPPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Plan soba"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProstor2KPPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Stanje skladišta"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

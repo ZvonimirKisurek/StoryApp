@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoomPlanActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RoomPlanActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite kat: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragRP" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite prostor: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textBrojEtapeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="1. kat"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textImeEtapeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text=" Sobe "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <ImageButton
+        android:id="@+id/imageDropStageRP"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textBrojEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textBrojEtapeRP"
+        app:layout_constraintTop_toTopOf="@+id/textBrojEtapeRP"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageRP"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textImeEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeRP"
+        app:layout_constraintTop_toTopOf="@+id/textImeEtapeRP"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUslugeRP"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circleblue"
+        android:backgroundTint="#E663CDFD"
+        android:padding="8dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="659dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDogađajikonaRP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/circlewhite"
+            android:padding="2dp"
+            android:src="@drawable/cleaningicon"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/cleaningicon"
+            tools:srcCompat="@drawable/cleaningicon" />
+
+        <TextView
+            android:id="@+id/textUslugaZaDodatiRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:padding="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Odabrati uslugu"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageDogađajikonaRP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTerminUslugeRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:padding="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Termin"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageUslugePullUpRP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageTerminiPullUpRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTerminUslugeRP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <Button
+            android:id="@+id/buttonPotvrdiUsluguRP"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="Potvrdi"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageTerminiPullUpRP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageTerminiPullUpRP"
+            app:layout_constraintTop_toTopOf="@+id/imageTerminiPullUpRP" />
+
+        <ImageButton
+            android:id="@+id/imageUslugePullUpRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleroomnumberblue"
+            android:backgroundTint="#D939BCEF"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textUslugaZaDodatiRP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/clOdabirKataRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textBrojEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textBrojEtapeRP">
+
+        <TextView
+            android:id="@+id/textPrvaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="2. kat"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textDrugaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="3. kat"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textTrecaOpcijaKatRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="4. kat"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeRP"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeRP">
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Kuhinja"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Restoran"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNatragRP"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center_vertical"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/clUslugeRP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical" >
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

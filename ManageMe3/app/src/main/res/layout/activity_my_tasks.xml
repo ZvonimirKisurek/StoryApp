@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MyTasksActivity">
+
+    <LinearLayout
+        android:id="@+id/clOdabirProstorijeMT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textImeEtapeMT"
+        app:layout_constraintStart_toStartOf="@+id/textImeEtapeMT"
+        app:layout_constraintTop_toBottomOf="@+id/textImeEtapeMT">
+
+        <TextView
+            android:id="@+id/textProstor1MT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Raspored rada"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProstor2MT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circletextblue"
+            android:backgroundTint="#E663CDFD"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Stanje skladišta"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCurrentTimeMT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Time"
+        android:textColor="#E663CDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageDropNameStageMT"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView47"
+        app:layout_constraintStart_toEndOf="@+id/textImeEtapeMT"
+        app:layout_constraintTop_toTopOf="@+id/textView47"
+        tools:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textImeEtapeMT"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Moji zadatci"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView47"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintTop_toTopOf="@+id/textView47"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circletextblue"
+        android:backgroundTint="#E663CDFD"
+        android:fontFamily="@font/adamina"
+        android:padding="4dp"
+        android:text="Izaberite aktivnost: "
+        android:textColor="#E6FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNatragWS" />
+
+    <LinearLayout
+        android:id="@+id/llNatragWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/adamina"
+            android:gravity="center"
+            android:text="Natrag"
+            android:textColor="#E663CDFD"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost1MT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost1MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/foodicon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/foodicon"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti1MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Posluga u sobu"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost1MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti1MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="12:00"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti1MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti1MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti1MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti1MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti1MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost1MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti1MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost2MT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost2MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti2MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Promijena posteljine"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost2MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti2MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="13:00"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti2MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti2MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti2MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti2MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti2MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost2MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti2MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost3MT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost3MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/cleaningicon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/cleaningicon"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti3MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Nadopuna materijala u sobi"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost3MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti3MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="14:00"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti3MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti3MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti3MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti3MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti3MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost3MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti3MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost4MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost4MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti4MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost4MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti4MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti4MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti4MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti4MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti4MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti4MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost4MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti4MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost5MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost5MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti5MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost5MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti5MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti5MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti5MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti5MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti5MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti5MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost5MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti5MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost6MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost6MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti6MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost6MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti6MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti6MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti6MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti6MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti6MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti6MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost6MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti6MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost7MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost7MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti7MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost7MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti7MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti7MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti7MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti7MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti7MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti7MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost7MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti7MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost8MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost8MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti8MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost8MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti8MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti8MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti8MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti8MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti8MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti8MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost8MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti8MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost9MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost9MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti9MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost9MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti9MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti9MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti9MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti9MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti9MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti9MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost9MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti9MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost10MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost10MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti10MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost10MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti10MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti10MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti10MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti10MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti10MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti10MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost10MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti10MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost11MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost11MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti11MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost11MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti11MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti11MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti11MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti11MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti11MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti11MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost11MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti11MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost12MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost12MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti12MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost12MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti12MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti12MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti12MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti12MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti12MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti12MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost12MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti12MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty_tall_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAktivnost13MT"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/circleproductblue"
+                android:backgroundTint="#E663CDFD"
+                android:visibility="invisible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageAktivnost13MT"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/circlewhite"
+                    android:padding="2dp"
+                    android:src="@drawable/bedmaking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/bedmaking"
+                    tools:srcCompat="@drawable/bedmaking" />
+
+                <TextView
+                    android:id="@+id/textNazivAktivnosti13MT"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Aktivnost"
+                    android:textColor="#E663CDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAktivnost13MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTimeAktivnosti13MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textNazivAktivnosti13MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInfoAktivnosti13MT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    android:text="  ?  "
+                    android:textColor="#E663CDFD"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/adamina"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textTimeAktivnosti13MT"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageObradaAktivnosti13MT"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/circlewhite"
+                    android:backgroundTint="#FFF"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textInfoAktivnosti13MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_check_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageErrorAktivnost13MT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageObradaAktivnosti13MT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/exclamationred" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

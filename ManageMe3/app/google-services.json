@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356452231175",
+    "project_id": "manage-me-a53e3",
+    "storage_bucket": "manage-me-a53e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356452231175:android:f3002499e7a2e1cba5e2a2",
+        "android_client_info": {
+          "package_name": "com.zoneproduction.manageme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356452231175-qus997q5vmg64pitcg0rvhrao69rt3vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXfpjqpSwHrnE6CZEQJU5U763buZB6XI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356452231175-qus997q5vmg64pitcg0rvhrao69rt3vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

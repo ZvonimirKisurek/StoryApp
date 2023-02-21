@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775899293054",
+    "project_id": "library-80ae5",
+    "storage_bucket": "library-80ae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775899293054:android:4bf1ebec7075d64452ff2f",
+        "android_client_info": {
+          "package_name": "com.zoneproduction.library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775899293054-8mnjc7c7qr8o14ea0f7qth4mc8mdioim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8DcAFaygASAMnSQVgjzFo-9EabsxeSqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775899293054-8mnjc7c7qr8o14ea0f7qth4mc8mdioim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
