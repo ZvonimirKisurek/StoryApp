@@ -87,9 +87,9 @@ public class LogInActivity extends AppCompatActivity {
                     startActivity(i);
                     finish();
                     progressBar.setVisibility(View.INVISIBLE);
-                    Toast.makeText(LogInActivity.this, "You're successfully logged in", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogInActivity.this, "Uspješno ste prijavljeni", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(LogInActivity.this, "Create Reader account first", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogInActivity.this, "Molim Vas kreirajte račun", Toast.LENGTH_LONG).show();
                     progressBar.setVisibility(View.INVISIBLE);
                     logIn.setClickable(true);
                 }
