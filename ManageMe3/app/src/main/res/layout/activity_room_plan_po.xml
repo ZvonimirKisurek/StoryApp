@@ -2098,12 +2098,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:textColor="#E663CDFD"
         android:fontFamily="@font/adamina"
         android:padding="4dp"
+        android:text="Vrijeme"
+        android:textColor="#E663CDFD"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text="Time"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

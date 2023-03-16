@@ -3,6 +3,7 @@ package com.zoneproduction.manageme;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
@@ -27,6 +31,8 @@ public class CreateAccountActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth auth = FirebaseAuth.getInstance();
     ConstraintLayout layoutVoditelj, layoutDjelatnik;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("https://manage-me-a53e3-default-rtdb.europe-west1.firebasedatabase.app/").child("DB");
     boolean vodi = false, djel = false;
 
     @SuppressLint("MissingInflatedId")
@@ -122,6 +128,46 @@ public class CreateAccountActivity extends AppCompatActivity {
                 }
             }
         });
+
+        System.out.println("Počinje");
+        myRef.child("Users").child("first").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+                } else {
+                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
+                }
+            }
+        });
+
+        String mail = auth.getCurrentUser().getEmail().toString();
+
+        writeNewUser(String.valueOf(10), email, vodi);
+
+    }
+
+    public void writeNewUser(String userId, String email, boolean admin) {
+        User user = new User(userId, email, admin);
+
+        myRef.child("Users").child(userId).setValue(user);
+    }
+
+    public class User {
+
+        public String username;
+        public String email;
+        public boolean admin;
+
+        public User() {
+            // Default constructor required for calls to DataSnapshot.getValue(User.class)
+        }
+
+        public User(String username, String email, boolean admin) {
+            this.username = username;
+            this.email = email;
+            this.admin = admin;
+        }
 
     }
 }
